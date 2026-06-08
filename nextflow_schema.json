@@ -78,7 +78,7 @@
                     "format": "file-path",
                     "exists": true,
                     "mimetype": "text/plain",
-                    "pattern": "^\\S+\\.fn?a(sta)?(\\.gz)?$",
+                    "pattern": "^(\\S+\\s*\\+\\s*)*\\S+\\.fn?a(sta)?(\\.gz)?'?$",
                     "description": "Path to FASTA genome file.",
                     "help_text": "This parameter is *mandatory* if `--genome` is not specified. If you don't have the appropriate alignment index available this will be generated for you automatically. Combine with `--save_reference` to save alignment index for future runs.",
                     "fa_icon": "far fa-file-code"
@@ -88,7 +88,7 @@
                     "format": "file-path",
                     "exists": true,
                     "mimetype": "text/plain",
-                    "pattern": "^\\S+\\.gtf(\\.gz)?$",
+                    "pattern": "^(\\S+\\s*\\+\\s*)*\\S+\\.gtf(\\.gz)?'?$",
                     "description": "Path to GTF annotation file.",
                     "fa_icon": "fas fa-code-branch",
                     "help_text": "Either this parameter or `--gff` is *mandatory* if --genome is not specified."
